@@ -74,3 +74,8 @@ body.is-loading{overflow:hidden}
 .hero-content>.hero-side-note{animation-delay:2.24s}
 @keyframes hero-copy-enter{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:translateX(0)}}
 @media(prefers-reduced-motion:reduce){.hero-content>.hero-kicker,.hero-content>h1,.hero-content>.hero-deck,.hero-content>.hero-button,.hero-content>.hero-side-note{opacity:1;animation:none}}
+@media(min-width:651px){.hero-content>.hero-kicker,.hero-content>h1,.hero-content>.hero-deck,.hero-content>.hero-button,.hero-content>.hero-side-note{animation-duration:.8s}}
+@media(prefers-reduced-motion:reduce){.hero-content>.hero-kicker,.hero-content>h1,.hero-content>.hero-deck,.hero-content>.hero-button,.hero-content>.hero-side-note{opacity:1;animation:none}}
+/* Keep navigation and action arrows as monochrome text symbols on iOS. */
+.nav-cta span,.hero-button span,.hero-bottom span,.match-cta b,.under-link span,.profile-caption>b,.roster-visit>b,.join-text span,.directory-back>span{font-family:Arial,Helvetica,sans-serif;font-variant-emoji:text}
+.match-status-dot{display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:50%;vertical-align:1px}
