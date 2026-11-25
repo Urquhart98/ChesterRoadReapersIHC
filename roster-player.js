@@ -96,4 +96,88 @@ if (/^https?:$/.test(window.location.protocol) && /\/index\.html$/.test(window.l
     }
     careerBody.append(row);
   }
+
+  const highlights = document.createElement('section');
+  highlights.className = 'player-highlights';
+  highlights.setAttribute('aria-labelledby', 'player-highlights-title');
+
+  const highlightsHeader = document.createElement('div');
+  highlightsHeader.className = 'player-highlights-heading';
+  const headingCopy = document.createElement('div');
+  const eyebrow = document.createElement('p');
+  eyebrow.className = 'section-label';
+  const eyebrowRule = document.createElement('i');
+  eyebrow.append(eyebrowRule, document.createTextNode(' PLAYER HIGHLIGHTS'));
+  const highlightsTitle = document.createElement('h2');
+  highlightsTitle.id = 'player-highlights-title';
+  highlightsTitle.append(document.createTextNode('Highlights '));
+  const highlightsAccent = document.createElement('em');
+  highlightsAccent.textContent = 'reel.';
+  highlightsTitle.append(highlightsAccent);
+  headingCopy.append(eyebrow, highlightsTitle);
+  const highlightsIntro = document.createElement('p');
+  highlightsIntro.className = 'player-highlights-intro';
+  highlightsIntro.textContent = 'Photos and video moments from the season.';
+  highlightsHeader.append(headingCopy, highlightsIntro);
+  highlights.append(highlightsHeader);
+
+  const highlightItems = (player.highlights || []).filter(item => item?.src && ['image', 'video'].includes(item.type));
+  if (highlightItems.length) {
+    const highlightsGrid = document.createElement('div');
+    highlightsGrid.className = 'player-highlights-grid';
+    for (const item of highlightItems) {
+      const card = document.createElement('figure');
+      card.className = 'player-highlight-card';
+      const media = document.createElement('div');
+      media.className = 'player-highlight-media';
+      const source = /^(?:https?:)?\/\//i.test(item.src) ? item.src : `../../../${item.src.replace(/^\/+/, '')}`;
+      if (item.type === 'video') {
+        const video = document.createElement('video');
+        video.controls = true;
+        video.playsInline = true;
+        video.preload = 'metadata';
+        if (item.poster) video.poster = /^(?:https?:)?\/\//i.test(item.poster) ? item.poster : `../../../${item.poster.replace(/^\/+/, '')}`;
+        const videoSource = document.createElement('source');
+        videoSource.src = source;
+        video.append(videoSource);
+        media.append(video);
+      } else {
+        const photo = document.createElement('img');
+        photo.src = source;
+        photo.alt = item.alt || item.title || `${player.name} highlight`;
+        photo.loading = 'lazy';
+        media.append(photo);
+      }
+      card.append(media);
+      if (item.title || item.caption) {
+        const caption = document.createElement('figcaption');
+        if (item.title) {
+          const title = document.createElement('strong');
+          title.textContent = item.title;
+          caption.append(title);
+        }
+        if (item.caption) {
+          const detail = document.createElement('span');
+          detail.textContent = item.caption;
+          caption.append(detail);
+        }
+        card.append(caption);
+      }
+      highlightsGrid.append(card);
+    }
+    highlights.append(highlightsGrid);
+  } else {
+    const emptyState = document.createElement('div');
+    emptyState.className = 'player-highlights-empty';
+    const emptyTitle = document.createElement('strong');
+    emptyTitle.textContent = 'Highlights coming soon';
+    const emptyCopy = document.createElement('span');
+    emptyCopy.textContent = 'Player photos and videos will appear here.';
+    emptyState.append(emptyTitle, emptyCopy);
+    highlights.append(emptyState);
+  }
+
+  const rosterBackLink = document.querySelector('.player-statistics .directory-back');
+  if (rosterBackLink) rosterBackLink.before(highlights);
+  else document.querySelector('.player-statistics .wrap')?.append(highlights);
 })();

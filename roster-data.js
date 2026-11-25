@@ -1,10 +1,30 @@
 window.CRRIHC_ROSTER = {
-  "adam-jones": {
-    "name": "Adam Jones",
-    "slug": "adam-jones",
-    "number": "",
+  "adam-lannin": {
+    "name": "Adam Lannin",
+    "slug": "adam-lannin",
+    "number": "33",
     "role": "Player",
-    "description": "Adam Jones is part of the current Chester Road Reapers playing roster.",
+    "description": "I’m naughty and thought it would be funny to put something silly here. Please message me and tell me how silly I am.",
+    "position": "Forward",
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "6 months"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Sir loin steak"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Northern Weeds — Sam Barber"
+      }
+    ],
+    "song": {
+      "title": "Northern Weeds",
+      "artist": "Sam Barber",
+      "spotifyId": "44njOc88Rct2dVx3ZoSYRf"
+    },
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
@@ -842,54 +862,12 @@ window.CRRIHC_ROSTER = {
     ],
     "statType": "goalie"
   },
-  "george-kelly": {
-    "name": "George Kelly",
-    "slug": "george-kelly",
-    "number": "95",
-    "role": "Spare",
-    "description": "George Kelly is listed among the Chester Road Reapers spares, wearing #95.",
-    "photo": "temp-player-image.png",
-    "stats": {
-      "GP": "0",
-      "G": "0",
-      "A": "0",
-      "P": "0"
-    },
-    "statLabels": [
-      "GP",
-      "G",
-      "A",
-      "P"
-    ],
-    "statType": "skater"
-  },
-  "george-spofforth": {
-    "name": "George Spofforth",
-    "slug": "george-spofforth",
-    "number": "18",
-    "role": "Spare",
-    "description": "George Spofforth is listed among the Chester Road Reapers spares, wearing #18.",
-    "photo": "temp-player-image.png",
-    "stats": {
-      "GP": "0",
-      "G": "0",
-      "A": "0",
-      "P": "0"
-    },
-    "statLabels": [
-      "GP",
-      "G",
-      "A",
-      "P"
-    ],
-    "statType": "skater"
-  },
   "karl-jones": {
     "name": "Karl Jones",
     "slug": "karl-jones",
     "number": "87",
-    "role": "Spare",
-    "description": "Karl Jones is listed among the Chester Road Reapers spares, wearing #87.",
+    "role": "Player",
+    "description": "Karl Jones is part of the current Chester Road Reapers playing roster, wearing #87.",
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",

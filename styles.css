@@ -176,12 +176,29 @@ body.is-loading .hero-content>.hero-kicker,body.is-loading .hero-content>h1,body
 .player-career-table tbody td:nth-child(2){font-weight:700;color:var(--ink)}
 .player-career-table .career-stat-value{font-variant-numeric:tabular-nums;color:#27323a}
 .player-career-table-hint{margin:8px 0 0;color:#89949a;font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.player-highlights{margin-top:66px;padding-top:42px;border-top:1px solid #dce2e4}
+.player-highlights-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+.player-highlights-heading .section-label{margin-bottom:12px}
+.player-highlights-heading h2{margin:0;color:var(--ink);font:800 clamp(38px,5vw,62px)/.9 var(--display);font-style:italic;text-transform:uppercase}
+.player-highlights-heading h2 em{color:var(--red);font-style:inherit}
+.player-highlights-intro{max-width:280px;margin:0 0 3px;color:#79868d;font-size:10px;line-height:1.6}
+.player-highlights-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.player-highlight-card{min-width:0;margin:0;background:#f1f4f5;border:1px solid #dce2e4}
+.player-highlight-media{aspect-ratio:16/9;overflow:hidden;background:#101820}
+.player-highlight-media img,.player-highlight-media video{display:block;width:100%;height:100%;object-fit:cover}
+.player-highlight-media video{object-fit:contain}
+.player-highlight-card figcaption{display:flex;flex-direction:column;gap:5px;padding:13px 15px}
+.player-highlight-card figcaption strong{color:var(--ink);font-size:11px}
+.player-highlight-card figcaption span{color:#79868d;font-size:9px;line-height:1.5}
+.player-highlights-empty{min-height:142px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:24px;text-align:center;background:#f4f6f7;border:1px dashed #cbd4d8}
+.player-highlights-empty strong{color:var(--ink);font:800 23px/.95 var(--display);font-style:italic;text-transform:uppercase}
+.player-highlights-empty span{color:#79868d;font-size:9px}
 .player-statistics .directory-back{margin-top:28px}
 .player-profile-footer{padding:17px 0;background:#0b1117;color:#aeb8be}
 .player-profile-footer .wrap{display:flex;justify-content:space-between;align-items:center;font-size:7px;font-weight:800;letter-spacing:.1em}
 .player-profile-footer a{color:#fff}
 @media(max-width:950px){.player-profile-section{min-height:0}.player-profile-layout{grid-template-columns:minmax(240px,330px) 1fr;gap:38px}.player-profile-portrait{height:340px}}
-@media(max-width:650px){.player-profile-section{padding:100px 0 48px}.player-profile-back{margin-bottom:20px}.player-profile-layout{grid-template-columns:1fr;gap:24px}.player-profile-portrait{height:330px;max-width:100%}.player-profile-name{font-size:clamp(62px,17vw,90px)}.player-profile-description{font-size:11px;margin:15px 0 18px}.player-statistics{padding:47px 0 54px}.player-stats-heading{display:block;margin-bottom:18px}.player-stats-heading h2{font-size:38px}.player-stats-note{display:block;margin-top:10px;font-size:6px}.player-stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.player-stat-card{min-height:93px;padding:13px}.player-stat-card strong{font-size:36px}.player-career-table-wrap{margin-top:20px}.player-career-table-hint{font-size:7px}.player-profile-footer .wrap{font-size:6px}}
+@media(max-width:650px){.player-profile-section{padding:100px 0 48px}.player-profile-back{margin-bottom:20px}.player-profile-layout{grid-template-columns:1fr;gap:24px}.player-profile-portrait{height:330px;max-width:100%}.player-profile-name{font-size:clamp(62px,17vw,90px)}.player-profile-description{font-size:11px;margin:15px 0 18px}.player-statistics{padding:47px 0 54px}.player-stats-heading{display:block;margin-bottom:18px}.player-stats-heading h2{font-size:38px}.player-stats-note{display:block;margin-top:10px;font-size:6px}.player-stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.player-stat-card{min-height:93px;padding:13px}.player-stat-card strong{font-size:36px}.player-career-table-wrap{margin-top:20px}.player-career-table-hint{font-size:7px}.player-highlights{margin-top:44px;padding-top:30px}.player-highlights-heading{display:block;margin-bottom:16px}.player-highlights-heading h2{font-size:38px}.player-highlights-intro{margin-top:9px;font-size:9px}.player-highlights-grid{grid-template-columns:1fr;gap:10px}.player-highlights-empty{min-height:118px}.player-highlights-empty strong{font-size:21px}.player-profile-footer .wrap{font-size:6px}}
 
 /* Social links in the Follow the Reapers callout */
 .join-social{display:flex;align-items:center;gap:10px;margin-top:22px}

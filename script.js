@@ -1,4 +1,10 @@
 
+// Normalize direct index.html visits to the directory URL on the published site.
+if (window.location.protocol !== 'file:' && /\/index\.html$/.test(window.location.pathname)) {
+  const cleanPath = window.location.pathname.replace(/index\.html$/, '');
+  window.history.replaceState(null, '', `${cleanPath}${window.location.search}${window.location.hash}`);
+}
+
 // Keep clean roster URLs on the published site, while preserving direct file links in local previews.
 if (window.location.protocol === 'file:') {
   document.querySelectorAll('a[href]').forEach(link => {
