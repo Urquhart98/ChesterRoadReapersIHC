@@ -88,7 +88,26 @@ window.CRRIHC_ROSTER = {
     "slug": "andy-urquhart",
     "number": "11",
     "role": "Forward",
-    "description": "Andy Urquhart is a forward for Chester Road Reapers, wearing #11.",
+    "description": "Growing up in Canada gave me a love for hockey, although I only took to the ice myself in 2025. Joining the Reapers has been an incredible experience. Everyone has been so welcoming, supportive and willing to go above and beyond to make you feel part of the team. I’m really grateful to be part of such a great group and can’t wait for the upcoming season!",
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "1 year"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Slim Chickens"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Roll in Peace — Kodak Black"
+      }
+    ],
+    "song": {
+      "title": "Roll in Peace",
+      "artist": "Kodak Black",
+      "spotifyId": "40oKW22ZNNkEdZLJTScaQI"
+    },
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
