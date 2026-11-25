@@ -177,12 +177,16 @@ if (pageLoader) {
       if (!image || !context) return false;
       const width = window.innerWidth;
       const height = window.innerHeight;
-      if (frameCanvas.width !== width || frameCanvas.height !== height) {
-        frameCanvas.width = width;
-        frameCanvas.height = height;
+      const pixelRatio = window.devicePixelRatio || 1;
+      const pixelWidth = Math.round(width * pixelRatio);
+      const pixelHeight = Math.round(height * pixelRatio);
+      if (frameCanvas.width !== pixelWidth || frameCanvas.height !== pixelHeight) {
+        frameCanvas.width = pixelWidth;
+        frameCanvas.height = pixelHeight;
       }
+      context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
       context.clearRect(0, 0, width, height);
-      const mobileScale = window.matchMedia('(max-width: 650px)').matches ? 1.9 : 3;
+      const mobileScale = window.matchMedia('(max-width: 650px)').matches ? 1.425 : 3;
       const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight) / mobileScale;
       const drawWidth = image.naturalWidth * scale;
       const drawHeight = image.naturalHeight * scale;

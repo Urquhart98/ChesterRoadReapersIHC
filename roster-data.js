@@ -256,7 +256,31 @@ window.CRRIHC_ROSTER = {
     "slug": "elliott-hale",
     "number": "29",
     "role": "Player",
-    "description": "Elliott Hale is part of the current Chester Road Reapers playing roster.",
+    "description": "I’m one of the original Reapers and have loved my time here. We’ve always had a great bunch, and my game has improved every season.",
+    "position": "Defence",
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "3–4 years"
+      },
+      {
+        "label": "Hockey highlight",
+        "value": "Winning the Hull tournament with nine players over a long weekend."
+      },
+      {
+        "label": "Favourite food",
+        "value": "Pizza"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Man I Need — Olivia Dean"
+      }
+    ],
+    "song": {
+      "title": "Man I Need",
+      "artist": "Olivia Dean",
+      "spotifyId": "1Uqs8TE5NAbLHpiWIVaf37"
+    },
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
@@ -675,7 +699,31 @@ window.CRRIHC_ROSTER = {
     "slug": "steve-kewin",
     "number": "47",
     "role": "Player",
-    "description": "Steve Kewin is part of the current Chester Road Reapers playing roster.",
+    "description": "You may have seen me behind the microphone on the Dragons TV live stream or co-hosting the Puck ’n’ Dragon Podcast, but now you can catch me on the ice too. Having taken up hockey later in life, I’ve developed a real passion for the game, both on and off the ice. My commentary might be better than my skating, but there’s no shortage of enthusiasm!",
+    "position": "Forward",
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "3 years"
+      },
+      {
+        "label": "Other club",
+        "value": "Connah’s Quay Cobras"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Honey & Rice Cake — Matty Barlow Special"
+      },
+      {
+        "label": "Favourite song",
+        "value": "My Hero — Foo Fighters"
+      }
+    ],
+    "song": {
+      "title": "My Hero",
+      "artist": "Foo Fighters",
+      "spotifyId": "4dVbhS6OiYvFikshyaQaCN"
+    },
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
