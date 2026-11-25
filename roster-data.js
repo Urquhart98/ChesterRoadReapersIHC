@@ -100,13 +100,13 @@ window.CRRIHC_ROSTER = {
       },
       {
         "label": "Favourite song",
-        "value": "Roll in Peace — Kodak Black"
+        "value": "Self Control — Laura Branigan"
       }
     ],
     "song": {
-      "title": "Roll in Peace",
-      "artist": "Kodak Black",
-      "spotifyId": "40oKW22ZNNkEdZLJTScaQI"
+      "title": "Self Control",
+      "artist": "Laura Branigan",
+      "spotifyId": "6JNJERZGJwDVgkmbohBw7u"
     },
     "photo": "temp-player-image.png",
     "stats": {
