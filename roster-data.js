@@ -839,12 +839,12 @@ window.CRRIHC_ROSTER = {
     ],
     "statType": "skater"
   },
-  "stephen-shelly": {
-    "name": "Stephen Shelly",
-    "slug": "stephen-shelly",
+  "stephen-shelley": {
+    "name": "Stephen Shelley",
+    "slug": "stephen-shelley",
     "number": "57",
     "role": "Team Staff",
-    "description": "Stephen Shelly is part of the staff team behind Chester Road Reapers.",
+    "description": "Stephen Shelley is part of the staff team behind Chester Road Reapers.",
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "45",
