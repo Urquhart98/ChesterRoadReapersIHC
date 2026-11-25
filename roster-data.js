@@ -7,7 +7,7 @@ window.CRRIHC_ROSTER = {
     "description": "Adam Jones is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "1",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -28,7 +28,7 @@ window.CRRIHC_ROSTER = {
     "description": "Adam Turner is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "21",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -49,7 +49,7 @@ window.CRRIHC_ROSTER = {
     "description": "Alex Poole is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "2",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -70,10 +70,10 @@ window.CRRIHC_ROSTER = {
     "description": "Andrew Gibson is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "38",
-      "G": "3",
+      "GP": "0",
+      "G": "0",
       "A": "0",
-      "P": "3"
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -91,7 +91,7 @@ window.CRRIHC_ROSTER = {
     "description": "Andy Urquhart is a forward for Chester Road Reapers, wearing #11.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "4",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -112,7 +112,7 @@ window.CRRIHC_ROSTER = {
     "description": "Billy Forrester is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "5",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -133,7 +133,7 @@ window.CRRIHC_ROSTER = {
     "description": "Brendan Lucas is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "8",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -154,7 +154,7 @@ window.CRRIHC_ROSTER = {
     "description": "Bruce Morton is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "45",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -175,7 +175,7 @@ window.CRRIHC_ROSTER = {
     "description": "Callum Garwell is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "2",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -196,7 +196,7 @@ window.CRRIHC_ROSTER = {
     "description": "Carl Jones is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "33",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -217,10 +217,10 @@ window.CRRIHC_ROSTER = {
     "description": "Craig Miller is chairman of Chester Road Reapers and is listed in the playing roster at #88.",
     "photo": "craig-miller.png",
     "stats": {
-      "GP": "53",
+      "GP": "0",
       "G": "0",
-      "A": "1",
-      "P": "1"
+      "A": "0",
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -259,10 +259,10 @@ window.CRRIHC_ROSTER = {
     "description": "Elliott Hale is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "53",
+      "GP": "0",
       "G": "0",
-      "A": "1",
-      "P": "1"
+      "A": "0",
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -280,7 +280,7 @@ window.CRRIHC_ROSTER = {
     "description": "Ellis Flanagan is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "47",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -301,7 +301,7 @@ window.CRRIHC_ROSTER = {
     "description": "Gregor Balmer is a forward for Chester Road Reapers, wearing #14.",
     "photo": "gregor-balmer.png",
     "stats": {
-      "GP": "55",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -322,14 +322,27 @@ window.CRRIHC_ROSTER = {
     "description": "Hi, I’m Jake. I’m ready for my first season with the Reapers and a great group of lads.",
     "position": "Forward",
     "profileDetails": [
-      {"label": "Hockey experience", "value": "6 months"},
-      {"label": "Favourite food", "value": "Pizza"},
-      {"label": "Favourite song", "value": "Love Me Again — John Newman"}
+      {
+        "label": "Hockey experience",
+        "value": "6 months"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Pizza"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Love Me Again — John Newman"
+      }
     ],
-    "song": {"title": "Love Me Again", "artist": "John Newman", "spotifyId": "57PjISfyOyDcvTPipz16nf"},
+    "song": {
+      "title": "Love Me Again",
+      "artist": "John Newman",
+      "spotifyId": "57PjISfyOyDcvTPipz16nf"
+    },
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "1",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -350,7 +363,7 @@ window.CRRIHC_ROSTER = {
     "description": "James Anders is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "6",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -371,7 +384,7 @@ window.CRRIHC_ROSTER = {
     "description": "Jody Chambers is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "24",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -392,7 +405,7 @@ window.CRRIHC_ROSTER = {
     "description": "John Buckell is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "26",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -413,7 +426,7 @@ window.CRRIHC_ROSTER = {
     "description": "Jordan Skilling is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "1",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -434,7 +447,7 @@ window.CRRIHC_ROSTER = {
     "description": "Liam Chute is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "1",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -476,7 +489,7 @@ window.CRRIHC_ROSTER = {
     "description": "Matt Cullen is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "1",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -497,7 +510,7 @@ window.CRRIHC_ROSTER = {
     "description": "Matt Ravenscroft is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "24",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -518,10 +531,10 @@ window.CRRIHC_ROSTER = {
     "description": "Nader Guesmi is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "48",
-      "G": "1",
+      "GP": "0",
+      "G": "0",
       "A": "0",
-      "P": "1"
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -539,7 +552,7 @@ window.CRRIHC_ROSTER = {
     "description": "Noah Deverowe is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "39",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -581,7 +594,7 @@ window.CRRIHC_ROSTER = {
     "description": "Rhys Williams is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "28",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -602,10 +615,10 @@ window.CRRIHC_ROSTER = {
     "description": "Richard Banks is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "51",
-      "G": "1",
-      "A": "2",
-      "P": "3"
+      "GP": "0",
+      "G": "0",
+      "A": "0",
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -665,7 +678,7 @@ window.CRRIHC_ROSTER = {
     "description": "Steve Kewin is part of the current Chester Road Reapers playing roster.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "29",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -686,10 +699,10 @@ window.CRRIHC_ROSTER = {
     "description": "Steven Roberts plays defence for Chester Road Reapers, wearing #6.",
     "photo": "steven-roberts.png",
     "stats": {
-      "GP": "65",
+      "GP": "0",
       "G": "0",
-      "A": "1",
-      "P": "1"
+      "A": "0",
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -707,10 +720,10 @@ window.CRRIHC_ROSTER = {
     "description": "David Meadows is a goaltender for Chester Road Reapers.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "18",
-      "GA": "131",
-      "GAA": "1.21",
-      "SO": "20"
+      "GP": "0",
+      "GA": "0",
+      "GAA": "0",
+      "SO": "0"
     },
     "statLabels": [
       "GP",
@@ -728,10 +741,10 @@ window.CRRIHC_ROSTER = {
     "description": "Gage Griffiths is a goaltender for Chester Road Reapers.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "3",
-      "GA": "54",
-      "GAA": "1.256",
-      "SO": "4"
+      "GP": "0",
+      "GA": "0",
+      "GAA": "0",
+      "SO": "0"
     },
     "statLabels": [
       "GP",
@@ -749,10 +762,10 @@ window.CRRIHC_ROSTER = {
     "description": "Teece is a goaltender for Chester Road Reapers.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "5",
-      "GA": "32",
-      "GAA": "0.8",
-      "SO": "5"
+      "GP": "0",
+      "GA": "0",
+      "GAA": "0",
+      "SO": "0"
     },
     "statLabels": [
       "GP",
@@ -770,7 +783,7 @@ window.CRRIHC_ROSTER = {
     "description": "George Kelly is listed among the Chester Road Reapers spares, wearing #95.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "30",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -791,10 +804,10 @@ window.CRRIHC_ROSTER = {
     "description": "George Spofforth is listed among the Chester Road Reapers spares, wearing #18.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "36",
-      "G": "4",
+      "GP": "0",
+      "G": "0",
       "A": "0",
-      "P": "4"
+      "P": "0"
     },
     "statLabels": [
       "GP",
@@ -812,7 +825,7 @@ window.CRRIHC_ROSTER = {
     "description": "Karl Jones is listed among the Chester Road Reapers spares, wearing #87.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "28",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -833,15 +846,31 @@ window.CRRIHC_ROSTER = {
     "description": "I’m really looking forward to leading the team this year. I love playing for this club and being on the ice with these boys—we’re a big family here. Show your support and help us bring some success this year.",
     "position": "Defence",
     "profileDetails": [
-      {"label": "Hockey experience", "value": "3 years"},
-      {"label": "Hockey highlight", "value": "Being equipment manager for the Deeside Dragons NIHL 1 team when they won the Moralee Cup Final at home against Telford. The team fought hard and the crowd was incredible."},
-      {"label": "Favourite food", "value": "Big juicy burger"},
-      {"label": "Favourite song", "value": "Suspicious Minds — Elvis Presley"}
+      {
+        "label": "Hockey experience",
+        "value": "3 years"
+      },
+      {
+        "label": "Hockey highlight",
+        "value": "Being equipment manager for the Deeside Dragons NIHL 1 team when they won the Moralee Cup Final at home against Telford. The team fought hard and the crowd was incredible."
+      },
+      {
+        "label": "Favourite food",
+        "value": "Big juicy burger"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Suspicious Minds — Elvis Presley"
+      }
     ],
-    "song": {"title": "Suspicious Minds", "artist": "Elvis Presley", "spotifyId": "1OtWwtGFPXVhdAVKZHwrNF"},
+    "song": {
+      "title": "Suspicious Minds",
+      "artist": "Elvis Presley",
+      "spotifyId": "1OtWwtGFPXVhdAVKZHwrNF"
+    },
     "photo": "rhys-stout.png",
     "stats": {
-      "GP": "51",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -862,16 +891,35 @@ window.CRRIHC_ROSTER = {
     "description": "I’ve been playing for around three years and also played as a junior for Deeside Sparks. I’ve recently taken over as game coordinator for the Reapers.",
     "position": "Defence",
     "profileDetails": [
-      {"label": "Hockey experience", "value": "3 years"},
-      {"label": "Other club", "value": "Connah’s Quay Cobras"},
-      {"label": "Hockey highlight", "value": "A puck to the face—broken nose and missing teeth. Quite the highlight!"},
-      {"label": "Favourite food", "value": "Roast dinner"},
-      {"label": "Favourite song", "value": "Mardy Bum — Arctic Monkeys"}
+      {
+        "label": "Hockey experience",
+        "value": "3 years"
+      },
+      {
+        "label": "Other club",
+        "value": "Connah’s Quay Cobras"
+      },
+      {
+        "label": "Hockey highlight",
+        "value": "A puck to the face—broken nose and missing teeth. Quite the highlight!"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Roast dinner"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Mardy Bum — Arctic Monkeys"
+      }
     ],
-    "song": {"title": "Mardy Bum", "artist": "Arctic Monkeys", "spotifyId": "2fyIS6GXMgUcSv4oejx63f"},
+    "song": {
+      "title": "Mardy Bum",
+      "artist": "Arctic Monkeys",
+      "spotifyId": "2fyIS6GXMgUcSv4oejx63f"
+    },
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "45",
+      "GP": "0",
       "G": "0",
       "A": "0",
       "P": "0"
@@ -892,10 +940,10 @@ window.CRRIHC_ROSTER = {
     "description": "Louis Ellwood is part of the staff team behind Chester Road Reapers.",
     "photo": "temp-player-image.png",
     "stats": {
-      "GP": "38",
-      "G": "2",
+      "GP": "0",
+      "G": "0",
       "A": "0",
-      "P": "2"
+      "P": "0"
     },
     "statLabels": [
       "GP",
