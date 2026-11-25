@@ -1,3 +1,13 @@
+
+// Keep clean roster URLs on the published site, while preserving direct file links in local previews.
+if (window.location.protocol === 'file:') {
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (/^(?:roster\/)?players\/[^/]+\/$/.test(href)) {
+      link.setAttribute('href', `${href}index.html`);
+    }
+  });
+}
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelectorAll('.nav-left, .nav-right');
 

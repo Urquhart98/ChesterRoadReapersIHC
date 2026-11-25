@@ -1,3 +1,9 @@
+// Hide the implementation filename in published profile URLs.
+if (/^https?:$/.test(window.location.protocol) && /\/index\.html$/.test(window.location.pathname)) {
+  const cleanPath = window.location.pathname.replace(/index\.html$/, '');
+  window.history.replaceState(window.history.state, '', `${cleanPath}${window.location.search}${window.location.hash}`);
+}
+
 (() => {
   const page = document.querySelector('[data-player-slug]');
   if (!page) return;
