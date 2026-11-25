@@ -317,9 +317,16 @@ window.CRRIHC_ROSTER = {
   "jake-baker": {
     "name": "Jake Baker",
     "slug": "jake-baker",
-    "number": "",
+    "number": "10",
     "role": "Player",
-    "description": "Jake Baker is part of the current Chester Road Reapers playing roster.",
+    "description": "Hi, I’m Jake. I’m ready for my first season with the Reapers and a great group of lads.",
+    "position": "Forward",
+    "profileDetails": [
+      {"label": "Hockey experience", "value": "6 months"},
+      {"label": "Favourite food", "value": "Pizza"},
+      {"label": "Favourite song", "value": "Love Me Again — John Newman"}
+    ],
+    "song": {"title": "Love Me Again", "artist": "John Newman", "spotifyId": "57PjISfyOyDcvTPipz16nf"},
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "1",
@@ -823,7 +830,15 @@ window.CRRIHC_ROSTER = {
     "slug": "rhys-stout",
     "number": "8",
     "role": "Team Captain",
-    "description": "Rhys Stout captains Chester Road Reapers, wearing #8.",
+    "description": "I’m really looking forward to leading the team this year. I love playing for this club and being on the ice with these boys—we’re a big family here. Show your support and help us bring some success this year.",
+    "position": "Defence",
+    "profileDetails": [
+      {"label": "Hockey experience", "value": "3 years"},
+      {"label": "Hockey highlight", "value": "Being equipment manager for the Deeside Dragons NIHL 1 team when they won the Moralee Cup Final at home against Telford. The team fought hard and the crowd was incredible."},
+      {"label": "Favourite food", "value": "Big juicy burger"},
+      {"label": "Favourite song", "value": "Suspicious Minds — Elvis Presley"}
+    ],
+    "song": {"title": "Suspicious Minds", "artist": "Elvis Presley", "spotifyId": "1OtWwtGFPXVhdAVKZHwrNF"},
     "photo": "rhys-stout.png",
     "stats": {
       "GP": "51",
@@ -844,7 +859,16 @@ window.CRRIHC_ROSTER = {
     "slug": "stephen-shelley",
     "number": "57",
     "role": "Team Staff",
-    "description": "Stephen Shelley is part of the staff team behind Chester Road Reapers.",
+    "description": "I’ve been playing for around three years and also played as a junior for Deeside Sparks. I’ve recently taken over as game coordinator for the Reapers.",
+    "position": "Defence",
+    "profileDetails": [
+      {"label": "Hockey experience", "value": "3 years"},
+      {"label": "Other club", "value": "Connah’s Quay Cobras"},
+      {"label": "Hockey highlight", "value": "A puck to the face—broken nose and missing teeth. Quite the highlight!"},
+      {"label": "Favourite food", "value": "Roast dinner"},
+      {"label": "Favourite song", "value": "Mardy Bum — Arctic Monkeys"}
+    ],
+    "song": {"title": "Mardy Bum", "artist": "Arctic Monkeys", "spotifyId": "2fyIS6GXMgUcSv4oejx63f"},
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "45",
