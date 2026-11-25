@@ -5,11 +5,35 @@ if (window.location.protocol === 'file:') {
     const href = link.getAttribute('href');
     if (/^(?:roster\/)?players\/[^/]+\/$/.test(href)) {
       link.setAttribute('href', `${href}index.html`);
+    } else if (/(?:^|\/)gallery\/$/.test(href)) {
+      link.setAttribute('href', `${href}index.html`);
     }
   });
 }
 const toggle = document.querySelector('.menu-toggle');
 const mobileNavigation = document.querySelector('.header-navigation');
+const siteHeader = document.querySelector('.site-header');
+
+// Keep the header available on upward scrolls while letting it get out of the way on descent.
+let previousScrollY = window.scrollY;
+let scrollTicking = false;
+window.addEventListener('scroll', () => {
+  if (scrollTicking) return;
+  scrollTicking = true;
+  window.requestAnimationFrame(() => {
+    const currentScrollY = Math.max(0, window.scrollY);
+    const delta = currentScrollY - previousScrollY;
+    if (document.body.classList.contains('mobile-menu-open') || currentScrollY <= 80) {
+      siteHeader?.classList.remove('is-hidden-on-scroll');
+    } else if (delta > 4) {
+      siteHeader?.classList.add('is-hidden-on-scroll');
+    } else if (delta < -4) {
+      siteHeader?.classList.remove('is-hidden-on-scroll');
+    }
+    previousScrollY = currentScrollY;
+    scrollTicking = false;
+  });
+}, { passive: true });
 
 // Rotate a shuffled deck through the homepage roster preview so every profile
 // gets a turn before the same cycle repeats.
@@ -109,7 +133,95 @@ document.addEventListener('click', event => {
 const pageLoader = document.querySelector('#site-loader');
 if (pageLoader) {
   document.body.classList.add('is-loading');
-  window.setTimeout(() => {
+  const frameCanvas = pageLoader.querySelector('#loader-frame');
+  if (frameCanvas) {
+    const context = frameCanvas.getContext('2d', { alpha: true });
+    const framePrefix = pageLoader.dataset.framePrefix;
+    const frameCount = 107;
+    const frameRate = 30;
+    const playbackRate = 1.16;
+    const frameCache = new Map();
+    const frameRequests = new Map();
+    let currentFrame = 0;
+    let nextFrameTime = 0;
+
+    const hideLoader = () => {
+      pageLoader.classList.add('is-hidden');
+      window.setTimeout(() => {
+        document.body.classList.remove('is-loading');
+        pageLoader.remove();
+      }, 500);
+    };
+    const loadFrame = index => {
+      if (index < 0 || index >= frameCount) return Promise.resolve(null);
+      if (frameCache.has(index)) return Promise.resolve(frameCache.get(index));
+      if (frameRequests.has(index)) return frameRequests.get(index);
+      const image = new Image();
+      const request = new Promise(resolve => {
+        image.onload = () => {
+          frameCache.set(index, image);
+          frameRequests.delete(index);
+          resolve(image);
+        };
+        image.onerror = () => {
+          frameRequests.delete(index);
+          resolve(null);
+        };
+        image.src = `${framePrefix}${String(index).padStart(6, '0')}.png`;
+      });
+      frameRequests.set(index, request);
+      return request;
+    };
+    const drawFrame = index => {
+      const image = frameCache.get(index);
+      if (!image || !context) return false;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      if (frameCanvas.width !== width || frameCanvas.height !== height) {
+        frameCanvas.width = width;
+        frameCanvas.height = height;
+      }
+      context.clearRect(0, 0, width, height);
+      const mobileScale = window.matchMedia('(max-width: 650px)').matches ? 1.9 : 3;
+      const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight) / mobileScale;
+      const drawWidth = image.naturalWidth * scale;
+      const drawHeight = image.naturalHeight * scale;
+      context.drawImage(image, (width - drawWidth) / 2, (height - drawHeight) / 2, drawWidth, drawHeight);
+      return true;
+    };
+    const preloadAhead = from => {
+      for (let i = from; i < Math.min(frameCount, from + 12); i++) loadFrame(i);
+    };
+
+    Promise.all(Array.from({ length: 8 }, (_, i) => loadFrame(i))).then(initialFrames => {
+      if (!initialFrames[0] || !drawFrame(0)) {
+        hideLoader();
+        return;
+      }
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        window.setTimeout(hideLoader, 350);
+        return;
+      }
+      const playbackStartedAt = performance.now();
+      const play = now => {
+        const displayTick = Math.floor((now - playbackStartedAt) * frameRate / 1000);
+        const targetFrame = Math.min(frameCount - 1, Math.floor(displayTick * playbackRate));
+        if (targetFrame > currentFrame && frameCache.has(targetFrame)) {
+          currentFrame = targetFrame;
+          drawFrame(currentFrame);
+          for (const index of frameCache.keys()) if (index < currentFrame - 3) frameCache.delete(index);
+        }
+        if (currentFrame === frameCount - 1) {
+          hideLoader();
+          return;
+        }
+        preloadAhead(currentFrame + 1);
+        window.requestAnimationFrame(play);
+      };
+      preloadAhead(8);
+      window.requestAnimationFrame(play);
+    });
+  } else window.setTimeout(() => {
     pageLoader.classList.add('is-hidden');
     document.body.classList.remove('is-loading');
     window.setTimeout(() => pageLoader.remove(), 500);
