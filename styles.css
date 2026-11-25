@@ -114,3 +114,82 @@ body.is-loading{overflow:hidden}
 .squad .roster-preview-link:hover{background:var(--red);border-color:var(--red);color:#fff}
 @media(max-width:950px){.squad .profile-image{height:200px}}
 @media(max-width:650px){.squad .profile-image{height:150px}.squad .roster-preview-link{min-height:60px}}
+
+/* Compact roster tiles for the complete player, goalie and spare lists. */
+.roster-group{margin-top:45px}
+.roster-group-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:17px}
+.roster-group-heading .directory-kicker{margin:0 0 7px}
+.roster-group-heading h2{margin:0;font:800 37px/.9 var(--display);font-style:italic;text-transform:uppercase}
+.roster-group-heading>small{padding-bottom:3px;color:#89959b;font-size:7px;font-weight:800;letter-spacing:.12em}
+.roster-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.roster-card{min-width:0;min-height:76px;padding:10px 12px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e1e6e8}
+.roster-avatar{width:44px;height:50px;flex:0 0 44px;display:grid;place-items:center;overflow:hidden;background:#eaf0f2;color:#51616a;font-size:12px;font-weight:800;letter-spacing:.04em}
+.roster-avatar img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.roster-card-copy{min-width:0;display:flex;flex:1;flex-direction:column;gap:4px}
+.roster-card-copy strong{overflow:hidden;color:var(--ink);font:800 17px/.92 var(--display);font-style:italic;text-overflow:ellipsis;text-transform:uppercase;white-space:nowrap}
+.roster-card-copy span{overflow:hidden;color:#7b878d;font-size:7px;font-weight:700;letter-spacing:.08em;text-overflow:ellipsis;text-transform:uppercase;white-space:nowrap}
+.roster-card-number{flex:0 0 auto;color:var(--red);font:800 24px/.85 var(--display);font-style:italic}
+.roster-avatar{width:74px;height:76px;flex-basis:74px;background:transparent}
+.roster-avatar img[src$="temp-player-image.png"]{object-fit:contain}
+.profile-photo.is-placeholder{object-fit:contain;background:#31090c}
+@media(max-width:950px){.roster-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.roster-group{margin-top:34px}.roster-group-heading{margin-bottom:13px}.roster-group-heading h2{font-size:32px}.roster-group-heading>small{font-size:6px}.roster-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.roster-card{min-height:76px;padding:8px;gap:7px}.roster-avatar{width:56px;height:58px;flex-basis:56px;font-size:10px}.roster-card-copy strong{font-size:14px}.roster-card-copy span{font-size:6px;letter-spacing:.04em}.roster-card-number{font-size:20px}}
+
+/* Individual roster profiles and statistics pages. */
+.roster-card{color:inherit;text-decoration:none;transition:border-color .18s ease,transform .18s ease}
+.roster-card:hover,.roster-card:focus-visible{border-color:var(--red);transform:translateY(-2px)}
+.roster-card:focus-visible,.roster-staff-link:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.roster-staff-link{display:block;color:inherit;text-decoration:none}
+.roster-staff-link:hover .profile-image{outline:1px solid var(--red)}
+.player-profile-section{padding:138px 0 76px;background:linear-gradient(135deg,#eaf0f2 0%,#f7f8f6 70%);min-height:590px}
+.player-profile-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:28px;color:#66737a;font-size:8px;font-weight:800;letter-spacing:.12em}
+.player-profile-back span{color:var(--red);font:700 17px Arial,Helvetica,sans-serif}
+.player-profile-layout{display:grid;grid-template-columns:minmax(270px,390px) minmax(0,1fr);align-items:center;gap:clamp(35px,7vw,96px)}
+.player-profile-portrait{height:390px;position:relative;overflow:hidden;background:#101820}
+.player-profile-image{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.player-profile-image.is-placeholder{object-fit:contain;background:#31090c}
+.player-profile-copy .section-label{margin:0 0 14px;color:#6f7a81}
+.player-profile-number{color:var(--red);font-weight:800}
+.player-profile-name{margin:0;color:var(--ink);font:900 clamp(65px,9vw,112px)/.78 var(--display);font-style:italic;letter-spacing:-.035em;text-transform:uppercase}
+.player-profile-description{max-width:470px;margin:20px 0 22px;color:#69757c;font-size:13px;line-height:1.8}
+.player-profile-copy .hero-button{gap:22px}
+.player-statistics{padding:74px 0 82px;background:#fff}
+.player-stats-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:24px}
+.player-stats-heading .section-label{margin-bottom:10px}
+.player-stats-heading h2{margin:0;font:800 48px/.88 var(--display);font-style:italic;text-transform:uppercase}
+.player-stats-heading h2 em{color:var(--red)}
+.player-stats-note{color:#89949a;font-size:7px;font-weight:800;letter-spacing:.12em}
+.player-stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.player-stat-card{min-height:116px;padding:18px;background:#f1f4f5;border-top:2px solid var(--red);display:flex;flex-direction:column;justify-content:space-between}
+.player-stat-card span{color:#78858d;font-size:8px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.player-stat-card strong{color:var(--ink);font:900 43px/.9 var(--display);font-style:italic}
+.player-career-table-wrap{margin-top:28px;overflow-x:auto;border:1px solid #dce2e5;background:#fff;box-shadow:0 8px 24px rgba(11,17,23,.05);-webkit-overflow-scrolling:touch}
+.player-career-table{width:100%;min-width:1040px;border-collapse:collapse;font-size:11px;text-align:center}
+.player-career-table th,.player-career-table td{padding:12px 11px;border-bottom:1px solid #e1e6e8;white-space:nowrap}
+.player-career-table thead tr:first-child{background:#101820;color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:9px}
+.player-career-table thead tr:first-child th:first-child,.player-career-table thead tr:first-child th:nth-child(2),.player-career-table thead tr:first-child th:nth-child(3){text-align:left}
+.player-career-table thead tr:nth-child(2){background:var(--red);color:#fff;font-size:9px;letter-spacing:.08em}
+.player-career-table tbody tr:nth-child(even){background:#f1f4f5}
+.player-career-table tbody td:first-child,.player-career-table tbody td:nth-child(2),.player-career-table tbody td:nth-child(3){text-align:left}
+.player-career-table tbody td:first-child{font-weight:800;color:#67747b}
+.player-career-table tbody td:nth-child(2){font-weight:700;color:var(--ink)}
+.player-career-table .career-stat-value{font-variant-numeric:tabular-nums;color:#27323a}
+.player-career-table-hint{margin:8px 0 0;color:#89949a;font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.player-statistics .directory-back{margin-top:28px}
+.player-profile-footer{padding:17px 0;background:#0b1117;color:#aeb8be}
+.player-profile-footer .wrap{display:flex;justify-content:space-between;align-items:center;font-size:7px;font-weight:800;letter-spacing:.1em}
+.player-profile-footer a{color:#fff}
+@media(max-width:950px){.player-profile-section{min-height:0}.player-profile-layout{grid-template-columns:minmax(240px,330px) 1fr;gap:38px}.player-profile-portrait{height:340px}}
+@media(max-width:650px){.player-profile-section{padding:100px 0 48px}.player-profile-back{margin-bottom:20px}.player-profile-layout{grid-template-columns:1fr;gap:24px}.player-profile-portrait{height:330px;max-width:100%}.player-profile-name{font-size:clamp(62px,17vw,90px)}.player-profile-description{font-size:11px;margin:15px 0 18px}.player-statistics{padding:47px 0 54px}.player-stats-heading{display:block;margin-bottom:18px}.player-stats-heading h2{font-size:38px}.player-stats-note{display:block;margin-top:10px;font-size:6px}.player-stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.player-stat-card{min-height:93px;padding:13px}.player-stat-card strong{font-size:36px}.player-career-table-wrap{margin-top:20px}.player-career-table-hint{font-size:7px}.player-profile-footer .wrap{font-size:6px}}
+
+/* Social links in the Follow the Reapers callout */
+.join-social{display:flex;align-items:center;gap:10px;margin-top:22px}
+.join-social a{width:36px;height:36px;display:grid;place-items:center;border:1px solid #ffffff60;border-radius:50%;color:#fff;transition:background .2s,border-color .2s,transform .2s}
+.join-social a:hover{background:var(--red);border-color:var(--red);transform:translateY(-2px)}
+.join-social svg{width:15px;height:15px;fill:currentColor}
+.join-social a:first-child svg{fill:none;stroke:currentColor;stroke-width:1.8}
+.join-social a:first-child .join-social-dot{fill:currentColor;stroke:none}
+@media(max-width:650px){.join-social{gap:9px;margin-top:18px}.join-social a{width:33px;height:33px}.join-social svg{width:14px;height:14px}}
+.footer-social svg{width:15px;height:15px;fill:currentColor}
+.footer-social a:first-of-type svg{fill:none;stroke:currentColor;stroke-width:1.8}
+.footer-social a:first-of-type .join-social-dot{fill:currentColor;stroke:none}
