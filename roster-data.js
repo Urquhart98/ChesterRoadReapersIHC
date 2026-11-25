@@ -2,6 +2,7 @@ window.CRRIHC_ROSTER = {
   "adam-lannin": {
     "name": "Adam Lannin",
     "slug": "adam-lannin",
+    "experienceTracking": {"baselineExperience": "6 months", "baselineDate": "2026-11-25"},
     "number": "33",
     "role": "Player",
     "description": "I’m naughty and thought it would be funny to put something silly here. Please message me and tell me how silly I am.",
@@ -106,6 +107,7 @@ window.CRRIHC_ROSTER = {
   "andy-urquhart": {
     "name": "Andy Urquhart",
     "slug": "andy-urquhart",
+    "experienceTracking": {"baselineExperience": "1 year", "baselineDate": "2026-11-25"},
     "number": "11",
     "role": "Forward",
     "description": "Growing up in Canada gave me a love for hockey, although I only took to the ice myself in 2025. Joining the Reapers has been an incredible experience. Everyone has been so welcoming, supportive and willing to go above and beyond to make you feel part of the team. I’m really grateful to be part of such a great group and can’t wait for the upcoming season!",
@@ -272,9 +274,30 @@ window.CRRIHC_ROSTER = {
   "dom-birbeck": {
     "name": "Dom Birbeck",
     "slug": "dom-birbeck",
-    "number": "",
+    "experienceTracking": {"baselineExperience": "Around 7 months", "baselineDate": "2026-11-25"},
+    "number": "74",
     "role": "Player",
-    "description": "Dom Birbeck is part of the current Chester Road Reapers playing roster.",
+    "description": "A complete hockey noob, got hooked on the sport watching the Deeside Dragons in 2023 and watching them win the Moralee Cup in February 2026 inspired me to start playing.",
+    "position": "Forward",
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "Around 7 months"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Smash burgers"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Somewhere I Belong — Linkin Park"
+      }
+    ],
+    "song": {
+      "title": "Somewhere I Belong",
+      "artist": "Linkin Park",
+      "spotifyId": "3fjmSxt0PskST13CSdBUFx"
+    },
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
@@ -293,6 +316,7 @@ window.CRRIHC_ROSTER = {
   "elliott-hale": {
     "name": "Elliott Hale",
     "slug": "elliott-hale",
+    "experienceTracking": {"baselineExperience": "3–4 years", "baselineDate": "2026-11-25"},
     "number": "29",
     "role": "Player",
     "description": "I’m one of the original Reapers and have loved my time here. We’ve always had a great bunch, and my game has improved every season.",
@@ -736,6 +760,7 @@ window.CRRIHC_ROSTER = {
   "steve-kewin": {
     "name": "Steve Kewin",
     "slug": "steve-kewin",
+    "experienceTracking": {"baselineExperience": "3 years", "baselineDate": "2026-11-25"},
     "number": "47",
     "role": "Player",
     "description": "You may have seen me behind the microphone on the Dragons TV live stream or co-hosting the Puck ’n’ Dragon Podcast, but now you can catch me on the ice too. Having taken up hockey later in life, I’ve developed a real passion for the game, both on and off the ice. My commentary might be better than my skating, but there’s no shortage of enthusiasm!",

@@ -23,6 +23,29 @@ if (/^https?:$/.test(window.location.protocol) && /\/index\.html$/.test(window.l
     ? `${player.role} · ${player.position}`
     : player.role;
   document.querySelector('.player-profile-description').textContent = player.description;
+  const currentHockeyExperience = tracking => {
+    if (!tracking?.baselineExperience || !tracking?.baselineDate) return tracking?.baselineExperience || '';
+    const [year, month, day] = tracking.baselineDate.split('-').map(Number);
+    const baseline = new Date(year, month - 1, day);
+    const today = new Date();
+    let elapsedMonths = (today.getFullYear() - baseline.getFullYear()) * 12 + today.getMonth() - baseline.getMonth();
+    if (today.getDate() < baseline.getDate()) elapsedMonths -= 1;
+    elapsedMonths = Math.max(0, elapsedMonths);
+    if (!elapsedMonths) return tracking.baselineExperience;
+
+    const match = tracking.baselineExperience.match(/^\s*(.*?)\s*(\d+)\s*(?:[–-]\s*(\d+)\s*)?(months?|years?)\s*$/i);
+    if (!match) return tracking.baselineExperience;
+    const [, qualifier, first, second, unit] = match;
+    const toMonths = count => /^year/i.test(unit) ? Number(count) * 12 : Number(count);
+    const formatMonths = total => {
+      const years = Math.floor(total / 12);
+      const months = total % 12;
+      return [years ? `${years} year${years === 1 ? '' : 's'}` : '', months ? `${months} month${months === 1 ? '' : 's'}` : ''].filter(Boolean).join(' ');
+    };
+    const low = toMonths(first) + elapsedMonths;
+    const high = second ? toMonths(second) + elapsedMonths : null;
+    return `${qualifier ? `${qualifier.trim()} ` : ''}${formatMonths(low)}${high ? `–${formatMonths(high)}` : ''}`;
+  };
   const profileDetails = document.createElement('dl');
   profileDetails.className = 'player-profile-details';
   for (const detail of player.profileDetails || []) {
@@ -31,7 +54,9 @@ if (/^https?:$/.test(window.location.protocol) && /\/index\.html$/.test(window.l
     const label = document.createElement('dt');
     label.textContent = detail.label;
     const value = document.createElement('dd');
-    value.textContent = detail.value;
+    value.textContent = detail.label.trim().toLowerCase() === 'hockey experience'
+      ? currentHockeyExperience(player.experienceTracking || { baselineExperience: detail.value })
+      : detail.value;
     row.append(label, value);
     profileDetails.append(row);
   }
