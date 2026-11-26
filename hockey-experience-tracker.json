@@ -1,0 +1,206 @@
+{
+  "asOf": "2026-11-26",
+  "purpose": "Baseline for calculating elapsed time when player hockey experience is updated.",
+  "players": {
+    "adam-lannin": {
+      "name": "Adam Lannin",
+      "experienceAtBaseline": "6 months",
+      "baselineDate": "2026-11-25"
+    },
+    "adam-turner": {
+      "name": "Adam Turner",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "alex-poole": {
+      "name": "Alex Poole",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "andrew-gibson": {
+      "name": "Andrew Gibson",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "andy-urquhart": {
+      "name": "Andy Urquhart",
+      "experienceAtBaseline": "1 year",
+      "baselineDate": "2026-11-25"
+    },
+    "billy-forrester": {
+      "name": "Billy Forrester",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "brendan-lucas": {
+      "name": "Brendan Lucas",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "bruce-morton": {
+      "name": "Bruce Morton",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "callum-garwell": {
+      "name": "Callum Garwell",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "carl-jones": {
+      "name": "Carl Jones",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "craig-miller": {
+      "name": "Craig Miller",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "dom-birbeck": {
+      "name": "Dom Birbeck",
+      "experienceAtBaseline": "Around 7 months",
+      "baselineDate": "2026-11-25"
+    },
+    "elliott-hale": {
+      "name": "Elliott Hale",
+      "experienceAtBaseline": "3–4 years",
+      "baselineDate": "2026-11-25"
+    },
+    "ellis-flanagan": {
+      "name": "Ellis Flanagan",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "gregor-balmer": {
+      "name": "Gregor Balmer",
+      "experienceAtBaseline": "10 years",
+      "baselineDate": "2026-11-26"
+    },
+    "jake-baker": {
+      "name": "Jake Baker",
+      "experienceAtBaseline": "6 months",
+      "baselineDate": "2026-11-25"
+    },
+    "james-anders": {
+      "name": "James Anders",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "jody-chambers": {
+      "name": "Jody Chambers",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "john-buckell": {
+      "name": "John Buckell",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "jordan-skilling": {
+      "name": "Jordan Skilling",
+      "experienceAtBaseline": "18 months",
+      "baselineDate": "2026-11-26"
+    },
+    "liam-chute": {
+      "name": "Liam Chute",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "matt-bellis": {
+      "name": "Matt Bellis",
+      "experienceAtBaseline": "Less than a year",
+      "baselineDate": "2026-11-26"
+    },
+    "matt-cullen": {
+      "name": "Matt Cullen",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "matt-ravenscroft": {
+      "name": "Matt Ravenscroft",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "nader-guesmi": {
+      "name": "Nader Guesmi",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "noah-deverowe": {
+      "name": "Noah Deverowe",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "rhys-jones": {
+      "name": "Rhys Jones",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "rhys-williams": {
+      "name": "Rhys Williams",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "richard-banks": {
+      "name": "Richard Banks",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "ryan-chute": {
+      "name": "Ryan Chute",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "simon-roberts": {
+      "name": "Simon Roberts",
+      "experienceAtBaseline": "6 months",
+      "baselineDate": "2026-11-26"
+    },
+    "steve-kewin": {
+      "name": "Steve Kewin",
+      "experienceAtBaseline": "3 years",
+      "baselineDate": "2026-11-25"
+    },
+    "steven-roberts": {
+      "name": "Steven Roberts",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "david-meadows": {
+      "name": "David Meadows",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "gage-griffiths": {
+      "name": "Gage Griffiths",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "karl-jones": {
+      "name": "Karl Jones",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "rhys-stout": {
+      "name": "Rhys Stout",
+      "experienceAtBaseline": "3 years",
+      "baselineDate": "2026-11-25"
+    },
+    "stephen-shelley": {
+      "name": "Stephen Shelley",
+      "experienceAtBaseline": "3 years",
+      "baselineDate": "2026-11-25"
+    },
+    "louis-ellwood": {
+      "name": "Louis Ellwood",
+      "experienceAtBaseline": null,
+      "baselineDate": null
+    },
+    "andy-teece": {
+      "name": "Andy Teece",
+      "experienceAtBaseline": "11 years",
+      "baselineDate": "2026-11-26"
+    }
+  }
+}

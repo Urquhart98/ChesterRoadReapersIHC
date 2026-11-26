@@ -867,7 +867,7 @@ window.CRRIHC_ROSTER = {
     "name": "Stephen Shelley",
     "slug": "stephen-shelley",
     "number": "57",
-    "role": "Team Staff",
+    "role": "Game Coordinator",
     "description": "I’ve been playing for around three years and also played as a junior for Deeside Sparks. I’ve recently taken over as game coordinator for the Reapers.",
     "position": "Defence",
     "profileDetails": [
