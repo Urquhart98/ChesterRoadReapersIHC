@@ -75,7 +75,8 @@ if (/^https?:$/.test(window.location.protocol) && /\/index\.html$/.test(window.l
     songTitle.textContent = `${player.song.title} · ${player.song.artist}`;
     const spotify = document.createElement('iframe');
     spotify.title = `Spotify player: ${player.song.title} by ${player.song.artist}`;
-    spotify.src = `https://open.spotify.com/embed/track/${encodeURIComponent(player.song.spotifyId)}?utm_source=generator&theme=0`;
+    const spotifyKind = player.song.spotifyType === 'album' ? 'album' : 'track';
+    spotify.src = `https://open.spotify.com/embed/${spotifyKind}/${encodeURIComponent(player.song.spotifyId)}?utm_source=generator&theme=0`;
     spotify.width = '100%';
     spotify.height = '80';
     spotify.loading = 'lazy';
