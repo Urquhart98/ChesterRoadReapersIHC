@@ -70,7 +70,7 @@ window.CRRIHC_ROSTER = {
     "slug": "alex-poole",
     "number": "44",
     "role": "Player",
-    "description": "Alex Poole is part of the current Chester Road Reapers playing roster.",
+    "description": "After years of watching the Leafs and Devils from the sofa, I hit my 30s and decided it was time to stop watching and start playing. Six months in, I'm an attacking-minded D-man who probably joins the rush more than I should. Huge thanks to the lads for the warm welcome, training, and the top-tier locker-room tunes!",
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
@@ -84,7 +84,31 @@ window.CRRIHC_ROSTER = {
       "A",
       "P"
     ],
-    "statType": "skater"
+    "statType": "skater",
+    "position": "Defence",
+    "experienceTracking": {
+      "baselineExperience": "6 months",
+      "baselineDate": "2026-11-26"
+    },
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "6 months"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Bread"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Solitary Daze — Maceo Plex, Gabriel Ananda"
+      }
+    ],
+    "song": {
+      "title": "Solitary Daze",
+      "artist": "Maceo Plex, Gabriel Ananda",
+      "spotifyId": "5nbttXsM0PYqyASw0IQ1ux"
+    }
   },
   "andrew-gibson": {
     "name": "Andrew Gibson",
@@ -604,9 +628,9 @@ window.CRRIHC_ROSTER = {
   "rhys-jones": {
     "name": "Rhys Jones",
     "slug": "rhys-jones",
-    "number": "",
+    "number": "25",
     "role": "Player",
-    "description": "Rhys Jones is part of the current Chester Road Reapers playing roster.",
+    "description": "I've been playing for just over a year. I started skating when I was young, but I've always loved hockey.",
     "photo": "temp-player-image.png",
     "stats": {
       "GP": "0",
@@ -620,7 +644,31 @@ window.CRRIHC_ROSTER = {
       "A",
       "P"
     ],
-    "statType": "skater"
+    "statType": "skater",
+    "position": "Forward",
+    "experienceTracking": {
+      "baselineExperience": "1 year",
+      "baselineDate": "2026-11-26"
+    },
+    "profileDetails": [
+      {
+        "label": "Hockey experience",
+        "value": "1 year"
+      },
+      {
+        "label": "Favourite food",
+        "value": "Ice cream"
+      },
+      {
+        "label": "Favourite song",
+        "value": "Make Luv — Room 5, Oliver Cheatham"
+      }
+    ],
+    "song": {
+      "title": "Make Luv",
+      "artist": "Room 5, Oliver Cheatham",
+      "spotifyId": "6xXEw4y39shgIp6pacKQFH"
+    }
   },
   "rhys-williams": {
     "name": "Rhys Williams",

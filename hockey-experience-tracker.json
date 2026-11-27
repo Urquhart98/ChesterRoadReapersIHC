@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "purpose": "Baseline for calculating elapsed time when player hockey experience is updated.",
   "players": {
     "adam-lannin": {
@@ -14,8 +14,8 @@
     },
     "alex-poole": {
       "name": "Alex Poole",
-      "experienceAtBaseline": null,
-      "baselineDate": null
+      "experienceAtBaseline": "6 months",
+      "baselineDate": "2026-11-26"
     },
     "andrew-gibson": {
       "name": "Andrew Gibson",
@@ -134,8 +134,8 @@
     },
     "rhys-jones": {
       "name": "Rhys Jones",
-      "experienceAtBaseline": null,
-      "baselineDate": null
+      "experienceAtBaseline": "1 year",
+      "baselineDate": "2026-11-26"
     },
     "rhys-williams": {
       "name": "Rhys Williams",
