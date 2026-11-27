@@ -18,7 +18,14 @@ if (/^https?:$/.test(window.location.protocol) && /\/index\.html$/.test(window.l
   image.classList.toggle('is-placeholder', isPlaceholder);
 
   document.title = `${player.name} - Chester Road Reapers`;
-  document.querySelector('.player-profile-name').textContent = player.name;
+  const profileName = document.querySelector('.player-profile-name');
+  profileName.textContent = player.name;
+  if (player.number) {
+    const profileNumber = document.createElement('span');
+    profileNumber.className = 'player-profile-name-number';
+    profileNumber.textContent = ` #${player.number}`;
+    profileName.append(profileNumber);
+  }
   document.querySelector('.player-profile-role').textContent = player.position
     ? `${player.role} · ${player.position}`
     : player.role;

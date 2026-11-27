@@ -152,6 +152,7 @@ body.is-loading .hero-content>.hero-kicker,body.is-loading .hero-content>h1,body
 .player-profile-copy .section-label{margin:0 0 14px;color:#6f7a81}
 .player-profile-number{color:var(--red);font-weight:800}
 .player-profile-name{margin:0;color:var(--ink);font:900 clamp(65px,9vw,112px)/.78 var(--display);font-style:italic;letter-spacing:-.035em;text-transform:uppercase}
+.player-profile-name-number{display:inline-block;margin-left:.12em;color:var(--red);font-size:.38em;line-height:1;letter-spacing:-.01em;vertical-align:middle;white-space:nowrap}
 .player-profile-description{max-width:470px;margin:20px 0 22px;color:#69757c;font-size:13px;line-height:1.8}
 .player-profile-copy .hero-button{gap:22px}
 .player-statistics{padding:74px 0 82px;background:#fff}
